@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="夜航">
 <meta property="og:description" content="一直有使用 Google Sheet 进行基金和股票的的资金管理。每周会进行一次净值的整理，虽说耗时不多，但需要多次的复制黏贴，确实异常繁琐。后来看到 Excel 可以获取网页数据，觉得 Google Sheet 应该也可以，就开始找资料尝试起来。由于不懂代码和 VBA，过程比较艰辛，但最终也达到了自己的期待。   基金净值 准备好对应基金的网站。我使用的是天天基金的对应网站。如http://fu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2021-03-22T15:42:37.136Z">
+<meta property="og:updated_time" content="2021-04-06T06:04:12.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过 Google Sheet 获取基金及股票净值">
 <meta name="twitter:description" content="一直有使用 Google Sheet 进行基金和股票的的资金管理。每周会进行一次净值的整理，虽说耗时不多，但需要多次的复制黏贴，确实异常繁琐。后来看到 Excel 可以获取网页数据，觉得 Google Sheet 应该也可以，就开始找资料尝试起来。由于不懂代码和 VBA，过程比较艰辛，但最终也达到了自己的期待。   基金净值 准备好对应基金的网站。我使用的是天天基金的对应网站。如http://fu">
@@ -334,6 +334,7 @@
 <li>可惜的是，股票没有像基金一样可以轻松获取 table 数据的网站，尝试了多个网站后，最后只能使用了 jisilu.com 的数据。获取到的数据是“现价：10.000”这样的格式。最后再通过 RIGHT(A1,28LEN(A1)-LENB(A1))的公式提取出纯数字以供计算。<br>提取纯数字的思路是，通过     LEN 和 LENB 两个公式比较出汉字字段的长度，通过 RIGHT 获取对应剩下的数字即可。</li>
 </ol>
 <p>完成所有工作，觉得 Excel 真的太强了。同时也开始好奇，像 Excel 这样的产品，是怎么样从产品设计到开发的。<br>也告诫自己，不要满足于当前所接触的产品设计，还有很多更大更棒更能为用户创造价值的产品值得去接触。</p>
+<p><em>2021-04-04注：jisulu.com数据不知道为什么无法收集，更改为 <a href="http://cfi.cn/" target="_blank" rel="external">http://cfi.cn/</a> 收集。其他操作取值逻辑一致，后续若有调整不再重复说明。</em></p>
 
       
     </div>
